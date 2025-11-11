@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng lặp</title>
+    <script>
+        //Vòng lặp while
+        let dem = 0;
+        while (dem < 5) {
+            console.log(dem);
+            dem++;
+        }
+        //Vòng lặp do .. while
+        do {
+            console.log(dem);
+            dem--;
+        } while (dem > 0)
+
+        //Vòng lặp for
+        for (let i = 0; i < 5; i++) {
+            console.log("Lần lặp thứ " + i);
+        }
+
+        //Vòng lặp for of
+        let arr = ['apple', 'orange', 'mango', 'banana']
+
+        for (const item of arr) {
+            console.log(item);
+        }
+        //Vòng lặp foreach
+        arr.forEach(function (item, index) {
+            console.log(`${item} : ${index}`)
+        })
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuỗi Template literal</title>
+    <script>
+        let language = "Javascript";
+        let message = `Ngôn ngữ lập trình ${language}`;
+
+        console.log(message)
+
+        //Thuộc tính và phương thức của chuỗi
+        //Lấy độ dài chuỗi
+        console.log("độ dài chuỗi: ", message.length)
+        //chuỗi con
+        console.log("Chuỗi con trong message, lấy 4 ký tự đầu: ", message.substring(0, 4))
+
+        //Sử dụng ký tự đặc biệt trong chuỗi
+        message = "XIn chào, Tôi tên là \"Nam\"";
+        console.log(message)
+
+        //Kiểu số, phương thức
+        let x = 12, a = 'abc'
+        //Kiểm tra xem có phải số hay không sử dụng isNaN: false là số, true ko phải là số
+        console.log("Kiểm tra biến x: ", isNaN(x))
+        console.log("Kiểm tra biến a: ", isNaN(a))
+        //Kiểm tra xem nó có phải số nguyên không
+        console.log(`Kiểm tra số nguyên của ${x}: `, Number.isInteger(x))
+        console.log(`Kiểm tra số nguyên của ${a}: `, Number.isInteger(a))
+
+        //làm tròn số theo phần thập phân được chỉ định
+        let number1 = 13.56789
+        num = number1.toFixed(3)
+        console.log(`Làm tròn số ${number1}: `, number1.toFixed(3))
+        console.log(`Kiểu dữ liệu của ${num}: `, typeof num)
+
+        //Kiểu DL mảng
+        let arr1 = [12, 3, 4, 65, 7, 8, 'hello', { name: 'Ngọc' }]
+        console.log(arr1)
+        //Phần tử mảng theo chỉ số (index)
+        console.log('Phần tử có chỉ số là 6: ', arr1[6])
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

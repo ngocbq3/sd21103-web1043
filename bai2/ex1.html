@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch .. case</title>
+    <script>
+        let chon = 1;
+        switch (chon) {
+            case 1:
+                console.log("bạn đã chọn 1")
+                break
+            case 2:
+                console.log("bạn đã chọn 2")
+                break
+            default:
+                console.log('Bạn không chọn đúng')
+        }
+        /**
+         * Bài tập tính giá vé theo độ tuổi: 6->11: 300k
+         * 12 -> 17: 600k
+         * > 18 : 1200kg
+         */
+        let tuoi = prompt("Nhập tuổi của bạn để tính vé")
+        switch (true) {
+            case (tuoi >= 6 && tuoi < 12):
+                console.log("Giá vé của bạn là: 300K");
+                break;
+            case (tuoi >= 12 && tuoi < 18):
+                console.log("Giá vé của bạn là: 600K");
+                break;
+            case (tuoi >= 18):
+                console.log("Giá vé của bạn là: 1200K");
+                break;
+            default:
+                console.log("Tuổi không hợp lệ")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
