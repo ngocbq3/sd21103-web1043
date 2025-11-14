@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model (DOM)</title>
+</head>
+
+<body>
+    <h1 id="tieude"></h1>
+    <div id="head" onmouseover="moveOver()"></div>
+    <script>
+        //Lựa chọn thẻ cần thao tác
+        let h1 = document.querySelector('#tieude');//cách 1
+        h1.innerHTML = "Xin chào <i>thế giới</i>"
+
+        //Lựa chọn theo id
+        let head = document.getElementById('head');
+        head.innerHTML = `
+            <img src="images/pexels-pixabay-40896.jpg" width=100 />
+        `
+
+        //Khi di chuột vào
+        function moveOver() {
+            head.innerHTML = `
+            <img src="images/pexels-pixabay-259280.jpg" width=100 />
+        `
+        }
+
+
+
+        head.onmouseleave = function () {
+            head.innerHTML = `
+            <img src="images/pexels-pixabay-40896.jpg" width=100 />
+        `
+        }
+    </script>
+</body>
+
+</html>

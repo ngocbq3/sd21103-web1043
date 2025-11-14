@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout, và setInterval</title>
+    <script>
+        //setTimeout thực hiện sau 1 khoảng thời gian
+        let t = setTimeout(function () {
+            console.log('Thực hiện chương trình')
+            console.log('Xin chào')
+        }, 3000)
+
+        // clearTimeout(t)
+        let dem = 1;
+        //setInterval thực hiện lặp lại sau 1 khoảng thời gian
+        let inter = setInterval(function () {
+            console.log("Lặp lại lần thứ: " + dem)
+            dem++
+        }, 2000)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
