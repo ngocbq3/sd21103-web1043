@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Line 1</p>
+    <p>Line 2</p>
+    <p>Line 3</p>
+    <div id="container">
+        <div>Kinh tế</div>
+        <h3>Văn hóa</h3>
+        <p>Xã hội</p>
+    </div>
+
+    <script>
+        //truy cập phần tử html theo nhóm
+        const p = document.getElementsByTagName('p');
+        console.log(p[2]);
+
+        const parent = document.getElementById('container');
+        console.log(parent)
+
+        //truy cập phần tử con
+        //Truy cập phần tử con đầu
+        console.log(parent.firstElementChild)
+        //Truy cập phần tử con cuối
+        console.log(parent.lastElementChild)
+        //Truy cập phần tử con thứ kế tiếp
+        console.log(parent.firstElementChild.nextElementSibling)
+        //Truy cập tất cả các con
+        console.log(parent.children)
+        //Số lượng phần tử con
+        const countChild = parent.childElementCount;
+        console.log("Số lượng phần tử con: ", countChild)
+
+
+    </script>
+</body>
+
+</html>
