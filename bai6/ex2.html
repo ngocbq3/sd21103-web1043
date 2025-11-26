@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng class để thay đổi style</title>
+    <style>
+        .demo {
+            color: blue;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">XIn chào các bạn</div>
+    <button type="button">thay đổi</button>
+    <script>
+        const demo = document.getElementById('demo')
+        const button = document.querySelector('button')
+
+        button.addEventListener('click', function () {
+            demo.classList.toggle('demo')
+        })
+    </script>
+</body>
+
+</html>

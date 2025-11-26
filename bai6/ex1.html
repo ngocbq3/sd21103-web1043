@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thao tác với thuộc tính</title>
+    <style>
+        .demo {
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid red;
+            box-shadow: 3px 3px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">Xin chào thế giới</div>
+    <div>
+        <img src="images/anh2.jfif" alt="" id="anh">
+    </div>
+    <script>
+        const demo = document.getElementById('demo')
+
+        //Thay đổi văn bản
+        demo.innerText = "Chào các bạn học javascript"
+        //thay đổi style
+        demo.style.color = 'red'
+        demo.style.fontSize = 30
+        demo.style.fontWeight = 'bold'
+
+        //Thay đổi thuộc tính
+        const anh = document.getElementById('anh')
+        anh.setAttribute('width', 300)
+        anh.setAttribute('alt', 'ảnh con vượn')
+
+        //Thay đổi css
+        demo.classList.add('demo')
+    </script>
+</body>
+
+</html>
