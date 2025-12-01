@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Đăng ký thành viên</h1>
+        <form id="register" action="" method="post">
+            <div>
+                <label for="">Họ tên</label>
+                <input type="text" name="" id="hoten">
+                <span id="hotenErr" style="color:red"></span>
+            </div>
+            <div>
+                <label for="">Tài khoản</label>
+                <input type="text" name="" id="taikhoan">
+                <span id="taikhoanErr" style="color:red"></span>
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="" id="email">
+                <span id="emailErr" style="color:red"></span>
+            </div>
+            <div>
+                <label for="">Mật khẩu</label>
+                <input type="password" name="" id="matkhau">
+                <span id="matkhauErr" style="color:red"></span>
+            </div>
+            <div>
+                <button type="submit">Gửi</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="validate.js"></script>
+</body>
+
+</html>
